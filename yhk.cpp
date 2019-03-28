@@ -5,22 +5,23 @@
 #include<QLabel>
 #include<QWidget>
 #include<QPushButton>
-#include<QHBoxLayout>
 #include<QVBoxLayout>
+#include<QHBoxLayout>
 YHK::YHK(QWidget *parent) : QWidget(parent)
 {
   jg=new MLb(this);
   start=new Mbtn(this);
   start->setText("摇奖");
   log=new Mlog(this);
-  QHBoxLayout* qhb=new  QHBoxLayout(this);
-  QVBoxLayout * qvb=new QVBoxLayout(this);
-  qhb->addWidget(jg);
-  qhb->addWidget(log);
-  this->setFixedSize(300,150);
-  log->setSizeIncrement(70,30);
+  qvb=new QVBoxLayout(this);
+  qvb->addWidget(jg,0,Qt::AlignHCenter);
   qvb->addWidget(start);
-  qhb->addWidget(stop);
+  qvb->addWidget(log);
+  this->setFixedSize(300,250);
   this->setWindowTitle("百变星君摇号王超低仿版beta");
+
+  QObject::connect(this->start,&QPushButton::clicked,this->start,&Mbtn::clc);
+  QObject::connect(this->start,&Mbtn::sed,this->log,&Mlog::logs);
+  QObject::connect(this->start,&Mbtn::sed,this->jg,&MLb::yj);
 }
 
