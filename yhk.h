@@ -4,6 +4,7 @@
 #include <QWidget>
 #include<QPushButton>
 #include<QLabel>
+#include<QTimer>
 #include"mlb.h"
 #include<mlog.h>
 class QHBoxLayout;
@@ -20,5 +21,10 @@ public:
    Mbtn *stop;
    QHBoxLayout* qhb;
    QVBoxLayout * qvb;
+   QTimer *time;
+   void setInt();
+   void doLog();
+   int c;
+    static QRandomGenerator a;
 };
 #endif // YHK_H

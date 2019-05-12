@@ -234,6 +234,9 @@ debug/moc_yhk.cpp: mbtn.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/QTimer \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/qtimer.h \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/qbasictimer.h \
 		mlb.h \
 		mlog.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QTextBrowser \
@@ -745,6 +748,9 @@ debug/main.o: main.cpp ../../Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/QTimer \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/qtimer.h \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/qbasictimer.h \
 		mlb.h \
 		mlog.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QTextBrowser \
@@ -872,6 +878,9 @@ debug/yhk.o: yhk.cpp yhk.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/QTimer \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/qtimer.h \
+		../../Qt/5.11.2/mingw53_32/include/QtCore/qbasictimer.h \
 		mlb.h \
 		mlog.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QTextBrowser \
@@ -883,12 +892,12 @@ debug/yhk.o: yhk.cpp yhk.h \
 		../../Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
 		../../Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
 		../../Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
+		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
 		../../Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout
+		../../Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\yhk.o yhk.cpp
 
 debug/mlb.o: mlb.cpp mlb.h \

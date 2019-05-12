@@ -9,7 +9,6 @@ class MLb :public QLabel
   Q_OBJECT
 public:
   explicit MLb(QWidget *parent=nullptr);
-  QRandomGenerator * qr=new QRandomGenerator;
 public slots:
   void yj(int);
 };
